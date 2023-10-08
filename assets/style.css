@@ -1,10 +1,20 @@
-html {
+#loadingPage {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   font-family: sans-serif;
   background-image: url(./images/chris-murray-SQL6cO9D9lU-unsplash.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#quizPages {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  background-image: url(./images/billy-freeman-DequZoeAtug-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .title {
@@ -47,7 +57,6 @@ html {
   width: 75%;
   max-width: 1000px;
   box-shadow: 3px 3px 9px black;
-
 }
 
 .rulesList ol {
@@ -70,6 +79,3 @@ html {
   margin: auto;
   box-shadow: 3px 3px 9px black;
 }
-
-
-
