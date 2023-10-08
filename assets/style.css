@@ -105,17 +105,73 @@
   color: black;
   font-size: 2em;
   font-weight: 750;
+  box-shadow: 3px 3px 9px black;
+
 }
 
-.questionBox {}
+.questionBox {
+  display: flex;
+  /* justify-content: center; */
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 85%;
+  max-width: 1000px;
+  margin: 35px auto 0px auto;
+  height: 200px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 9px black;
+}
 
-.questionCount {}
+.questionCount {
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  color: black;
+  margin: 10px 0px 0px 10px;
+}
 
-.question {}
+.question {
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  padding: 45px;
+  color: black;
+  font-size: 2.5em;
+}
 
-.answers {}
+.answersArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.answerTabs {}
+.answerTabs {
+  display: flex;
+  margin: auto;
+  max-width: 900px;
+}
+
+.answerTabs ul {
+  display: flex;.
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 900px;
+  padding: 0%;
+}
+
+.answerTabs ul li {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  margin: 20px;
+  width: 360px;
+  height: 100px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 9px black;
+}
 
 /* Scoreboard pages styling */
 .finalCard {
