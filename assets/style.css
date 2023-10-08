@@ -17,6 +17,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: white;
 }
 
 #scoresPage {
@@ -94,7 +95,17 @@
 }
 
 /* Quiz pages styling */
+.timer {}
 
+.questionBox {}
+
+.questionCount {}
+
+.question {}
+
+.answers {}
+
+.answerTabs {}
 
 /* Scoreboard pages styling */
 .finalCard {
@@ -192,7 +203,7 @@
   font-size: 2em;
   text-shadow: 2px 2px 4px black;
 }
-  
+
 .scoreBoard h2 {
   margin: 0 20%;
   margin-bottom: 20px;
