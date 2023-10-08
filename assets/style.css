@@ -1,0 +1,75 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  background-image: url(./images/chris-murray-SQL6cO9D9lU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 40px 40px;
+  font-size: 7.5em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 3px 3px 9px black;
+}
+
+.sub {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  text-shadow: 3px 3px 9px black;
+}
+
+.nav {
+  display: flex;
+  font-size: 2em;
+  border-radius: 25px;
+  justify-content: center;
+  background-color: white;
+  max-width: 300px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 3px 3px 9px black;
+}
+
+.rulesList {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  margin: auto;
+  background-color: white;
+  border-radius: 25px;
+  width: 75%;
+  max-width: 1000px;
+  box-shadow: 3px 3px 9px black;
+
+}
+
+.rulesList ol {
+  padding-left: 100px;
+}
+
+.rulesList ol li {
+  padding: 2% 5%;
+}
+
+.startButton {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  background-color: white;
+  border-width: 1px;
+  border-radius: 25px;
+  max-width: 400px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 3px 3px 9px black;
+}
+
+
+
