@@ -1,3 +1,4 @@
+/* Multipage styling */
 #loadingPage {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -17,6 +18,17 @@
   background-attachment: fixed;
 }
 
+#scoresPage {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  background-image: url(./images/yunfan-xu-YpTXAjxKMvg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Loading page styling */
 .title {
   display: flex;
   justify-content: center;
@@ -40,7 +52,7 @@
   font-size: 2em;
   border-radius: 25px;
   justify-content: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   max-width: 300px;
   padding: 20px;
   margin: auto;
@@ -52,7 +64,7 @@
   justify-content: center;
   font-size: 2em;
   margin: auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 25px;
   width: 75%;
   max-width: 1000px;
@@ -71,11 +83,144 @@
   display: flex;
   font-size: 2em;
   justify-content: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   border-width: 1px;
   border-radius: 25px;
   max-width: 400px;
   padding: 20px;
   margin: auto;
   box-shadow: 3px 3px 9px black;
+}
+
+/* Quiz pages styling */
+
+
+/* Scoreboard pages styling */
+.finalCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  margin: 100px auto 0px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+  width: 75%;
+  max-width: 1000px;
+  box-shadow: 3px 3px 9px black;
+}
+
+.finalCard h1 {
+  font-size: 6em;
+  margin: 50px 0px 0px 0px;
+  text-shadow: 2px 2px 4px black;
+
+}
+
+.finalCard h2 {
+  font-size: 2em;
+  margin: 0px 0px 10px 350px;
+  opacity: 10%;
+}
+
+.finalCard div {
+  display: flex;
+}
+
+.scoreNav {
+  display: flex;
+  font-size: 1.75em;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.scoreNav ul {
+  display: flex;
+}
+
+.scoreNav ul li {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 14px;
+  border-radius: 15px;
+  margin: 10px 20px;
+  box-shadow: 3px 3px 9px black;
+}
+
+.scoreIs {
+  display: flex;
+  font-size: 3em;
+  padding: 8% 2%;
+}
+
+.numAnswered {
+  display: flex;
+  font-size: 3em;
+  padding: 8% 2%;
+}
+
+.timeRemain {
+  display: flex;
+  font-size: 3em;
+  padding: 8% 0% 16% 0%;
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  margin: 100px auto 45px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+  width: 75%;
+  max-width: 1000px;
+  box-shadow: 3px 3px 9px black;
+}
+
+.scoreBoard h1 {
+  font-size: 6em;
+  margin: 50px 0px 50px 0px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.highscore {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px black;
+}
+  
+.scoreBoard h2 {
+  margin: 0 20%;
+  margin-bottom: 20px;
+}
+
+.identifiers {
+  display: flex;
+}
+
+.scoreBoard ul {
+  padding: 0px 0px 30px 0px;
+}
+
+.scoreBoard ul li {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 5px 130px 5px 130px;
+}
+
+.resetQuiz {
+  display: flex;
+  font-size: 1.75em;
+  border-radius: 25px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 14px;
+  border-radius: 15px;
+  margin: 0 auto 100px auto;
+  box-shadow: 3px 3px 9px black;
+  width: 400px;
 }
