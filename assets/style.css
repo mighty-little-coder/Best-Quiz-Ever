@@ -81,7 +81,7 @@
   padding: 2% 5%;
 }
 
-.startButton {
+.goButton {
   display: flex;
   font-size: 2em;
   justify-content: center;
@@ -95,18 +95,37 @@
 }
 
 /* Quiz pages styling */
-.quizTimer {
+.startButton {
   display: flex;
   justify-content: center;
   background-color: rgba(255, 250, 205, 0.65);
   width: 35%;
+  height: 40;
   margin: 30px auto 0px auto;
   padding: 11px;
   color: black;
   font-size: 2em;
   font-weight: 750;
   box-shadow: 3px 3px 9px black;
+  transition: all 0.2s;
+}
 
+.startButton:hover {
+  background-color: lemonchiffon;
+}
+
+.quizTimer {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 250, 205, 0.65);
+  width: 35%;
+  height: 40px;
+  margin: 30px auto 0px auto;
+  padding: 11px;
+  color: black;
+  font-size: 2em;
+  font-weight: 750;
+  box-shadow: 3px 3px 9px black;
 }
 
 .questionBox {
@@ -115,7 +134,7 @@
   background-color: rgba(255, 255, 255, 0.85);
   width: 85%;
   max-width: 1000px;
-  margin: 35px auto 0px auto;
+  margin: 75px auto 35px auto;
   height: 200px;
   border-radius: 25px;
   box-shadow: 3px 3px 9px black;
@@ -129,7 +148,7 @@
   margin: 10px 0px 0px 10px;
 }
 
-.question {
+#question {
   margin: auto;
   justify-self: center;
   align-self: center;
@@ -144,21 +163,16 @@
   justify-content: center;
 }
 
-.answerTabs {
+#answerTabs {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   max-width: 900px;
 }
 
-.answerTabs ul {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
-  padding: 0%;
-}
-
-.answerTabs ul li {
+.answerBtn {
   color: black;
+  font-size: 1.25em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -166,10 +180,36 @@
   background-color: rgba(255, 255, 255, 0.85);
   padding: 20px;
   margin: 20px;
-  width: 360px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
   border-radius: 25px;
   box-shadow: 3px 3px 9px black;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.answerBtn:hover {
+  background-color: lemonchiffon;
+  font-weight: 600;
+}
+
+.nextBtn {
+  display: none;
+  justify-content: center;
+  background-color: rgba(255, 250, 205, 0.65);
+  width: 20%;
+  height: 40;
+  margin: 30px auto 0px auto;
+  padding: 11px;
+  color: black;
+  font-size: 2em;
+  font-weight: 750;
+  box-shadow: 3px 3px 9px black;
+  transition: all 0.2s;
+}
+
+.nextBtn:hover {
+  background-color: lemonchiffon;
 }
 
 /* Scoreboard pages styling */

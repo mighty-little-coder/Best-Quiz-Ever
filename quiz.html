@@ -11,6 +11,10 @@
 
 <body id="quizPages">
 
+  <header class="startButton">
+    Click to start
+  </header>
+  
   <header class="quizTimer">
     Time Remaining:
   </header>
@@ -18,29 +22,29 @@
   <!-- This section is a preset for adding questions in when ready -->
   <main class="questionBox">
     <h1 class="questionCount">1/20</h1>
-    <h2 class="question">What is "aperture"?</h2>
+    <h2 id="question">What is "aperture"?</h2>
   </main>
 
   <!-- This section is a preset for adding answer options in when ready -->
   <section class="answersArea">
 
-    <div class="answerTabs">
+    <div id="answerTabs">
 
-      <ul>
-        <li>Opening within the lens that controls amount of light that enters the camera's sensor</li>
-        <li>Fun indie game available for free on Steam</li>
-        <li>A tiny apartment</li>
-        <li>The record button</li>
-      </ul>
+      <button class="answerBtn">Opening within the lens that controls amount of light that enters the camera's sensor</button>
+      <button class="answerBtn">Fun indie game available for free on Steam</button>
+      <button class="answerBtn">A tiny apartment</button>
+      <button class="answerBtn">The record button</button>
 
     </div>
+
+    <div class="nextBtn">Next Question</div>
 
   </section>
 
 
 
 
-  <script src="./assets/script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
