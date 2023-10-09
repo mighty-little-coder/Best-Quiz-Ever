@@ -151,8 +151,7 @@
 }
 
 .answerTabs ul {
-  display: flex;.
-  flex-direction: column;
+  display: flex;
   flex-wrap: wrap;
   max-width: 900px;
   padding: 0%;

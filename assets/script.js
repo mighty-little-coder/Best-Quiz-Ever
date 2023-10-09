@@ -1,16 +1,21 @@
 var timerEl = document.querySelector(".quizTimer");
 
-var timeLeft = 45;
+
 
 function setTime() {
-  var timerInterval = setInterval(function() {
+  var timeLeft = 3;
+  var timerInterval = setInterval(() => {
     timeLeft--;
-    timerEl.textContent = "Time Remaining: " + timeLeft;
+    timerEl.textContent = ("Time Remaining: " + timeLeft);
 
-    if(timeLeft === 0) {
-      clearTimeout(timerInterval);
+    if(!timeLeft) {
+      clearTimeout(timerInterval)
+      timerEl.textContent = "TIME IS UP!"
       timesUp();
     }
 
   }, 1000);
 }
+
+// FIX THIS SO THE TIMER STARTS AT TOP NUMBER
+setTime();
