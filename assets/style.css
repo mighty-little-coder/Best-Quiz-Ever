@@ -112,6 +112,7 @@
 
 .startButton:hover {
   background-color: lemonchiffon;
+  cursor: pointer;
 }
 
 .quizTimer {
