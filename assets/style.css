@@ -94,13 +94,19 @@
   box-shadow: 3px 3px 9px black;
 }
 
+.goButton:hover {
+  background-color: lemonchiffon;
+  cursor: pointer;
+  /* font-weight: bold; */
+  transition: all 0.2s;
+}
 /* Quiz pages styling */
 .startButton {
   display: flex;
   justify-content: center;
   background-color: rgba(255, 250, 205, 0.65);
   width: 35%;
-  height: 40;
+  height: 40px;
   margin: 30px auto 0px auto;
   padding: 11px;
   color: black;
@@ -117,6 +123,7 @@
 
 .quizTimer {
   display: flex;
+  display: none;
   justify-content: center;
   background-color: rgba(255, 250, 205, 0.65);
   width: 35%;
@@ -130,8 +137,7 @@
 }
 
 .questionBox {
-  display: flex;
-  /* justify-content: center; */
+  display: none;
   background-color: rgba(255, 255, 255, 0.85);
   width: 85%;
   max-width: 1000px;
@@ -159,7 +165,7 @@
 }
 
 .answersArea {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 }
@@ -193,6 +199,26 @@
   background-color: lemonchiffon;
   font-weight: 600;
 }
+
+.quizEndScore {
+  display: none;
+  justify-content: center;
+  background-color: rgba(255, 250, 205, 0.65);
+  width: 20%;
+  height: 40;
+  margin: 30px auto 0px auto;
+  padding: 11px;
+  color: black;
+  font-size: 2em;
+  font-weight: 750;
+  box-shadow: 3px 3px 9px black;
+  transition: all 0.2s;
+}
+
+.quizEndScore:hover {
+  background-color: lemonchiffon;
+}
+
 
 .nextBtn {
   display: none;
@@ -341,4 +367,25 @@
   margin: 0 auto 100px auto;
   box-shadow: 3px 3px 9px black;
   width: 400px;
+}
+
+.scoreLog:hover {
+  background-color: lemonchiffon;
+  font-weight: bold;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.renderAllAnswers:hover {
+  background-color: lemonchiffon;
+  transition: all 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.doBetter:hover {
+  background-color: lemonchiffon;
+  transition: all 0.2s;
+  font-weight: bold;
+  cursor: pointer;
 }
