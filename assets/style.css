@@ -371,21 +371,18 @@
 
 .scoreLog:hover {
   background-color: lemonchiffon;
-  font-weight: bold;
   transition: all 0.2s;
   cursor: pointer;
 }
 
 .renderAllAnswers:hover {
   background-color: lemonchiffon;
-  transition: all 0.2s;
-  font-weight: bold;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .doBetter:hover {
   background-color: lemonchiffon;
   transition: all 0.2s;
-  font-weight: bold;
   cursor: pointer;
 }
