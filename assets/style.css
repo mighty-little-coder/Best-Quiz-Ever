@@ -247,7 +247,7 @@
   align-items: center;
   flex-direction: column;
   font-weight: 600;
-  margin: 100px auto 0px auto;
+  margin: 75px auto 0px auto;
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 25px;
   width: 75%;
@@ -295,19 +295,19 @@
 .scoreIs {
   display: flex;
   font-size: 3em;
-  padding: 8% 2%;
+  padding: 4% 2%;
 }
 
 .numAnswered {
   display: flex;
   font-size: 3em;
-  padding: 8% 2%;
+  padding: 4% 2%;
 }
 
 .timeRemain {
   display: flex;
   font-size: 3em;
-  padding: 8% 0% 16% 0%;
+  padding: 4% 0% 8% 0%;
 }
 
 .scoreBoard {
@@ -403,6 +403,12 @@
   margin: 100px auto 60px auto;
   box-shadow: 3px 3px 9px black;
   max-width: fit-content;
+}
+
+.checkAnswers h1 {
+  font-size: 3.5em;
+  margin: 15px auto 50px auto;
+  text-shadow: 2px 2px 4px black;
 }
 
 .checkAnsQuestions {
