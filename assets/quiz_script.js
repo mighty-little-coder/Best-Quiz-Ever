@@ -27,6 +27,60 @@ var questions = [
     correctAnswer: "Canon"
   },
 
+  {
+    questionTitle: "Which brand is responsible for the extremely popular \"ef\" lens mounting system",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
+  {
+    questionTitle: "How do DSLRs and mirrorless cameras differ?",
+    answersArray: ["Viewfinder (digital vs analog)", "Weight (camera body weights differ significantly)", "Sensor (different sensors are used to capture content)", "All of the above (all of these are true)"],
+    correctAnswer: "All of the above (all of these are true)"
+  },
+
+  {
+    questionTitle: "Which brand has the largest array of lens available?",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
+  {
+    questionTitle: "Which brand has the largest array of lens available?",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
+  {
+    questionTitle: "Which brand has the largest array of lens available?",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
+  {
+    questionTitle: "Which brand has the largest array of lens available?",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
+  {
+    questionTitle: "Which brand has the largest array of lens available?",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
+  {
+    questionTitle: "Which brand has the largest array of lens available?",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
+  {
+    questionTitle: "Which brand has the largest array of lens available?",
+    answersArray: ["Sony", "Lumix", "Canon", "Fujifilm"],
+    correctAnswer: "Canon"
+  },
+
 ]
 
 document.querySelector(".startButton").addEventListener("click", setTime)

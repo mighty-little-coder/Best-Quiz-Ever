@@ -100,6 +100,7 @@
   /* font-weight: bold; */
   transition: all 0.2s;
 }
+
 /* Quiz pages styling */
 .startButton {
   display: flex;
@@ -310,7 +311,7 @@
 }
 
 .scoreBoard {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -357,7 +358,7 @@
 }
 
 .resetQuiz {
-  display: flex;
+  display: none;
   font-size: 1.75em;
   border-radius: 25px;
   justify-content: center;
@@ -367,6 +368,12 @@
   margin: 0 auto 100px auto;
   box-shadow: 3px 3px 9px black;
   width: 400px;
+}
+
+.resetQuiz:hover {
+  background-color: lemonchiffon;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 .scoreLog:hover {
@@ -385,4 +392,45 @@
   background-color: lemonchiffon;
   transition: all 0.2s;
   cursor: pointer;
+}
+
+.checkAnswers {
+  display: none;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 14px;
+  border-radius: 15px;
+  margin: 100px auto 60px auto;
+  box-shadow: 3px 3px 9px black;
+  max-width: fit-content;
+}
+
+.checkAnsQuestions {
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75em;
+  border-radius: 25px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.checkAnswers ul {
+  padding: 0px 0px 50px 0px;
+  list-style-type: none;
+}
+
+.checkAnswers ul li {
+  margin: 0px 20px 10px 20px;
+}
+
+.checkAnsAns {
+  font-weight: 200;
+}
+
+#special {
+  background-color: rgba(92, 159, 92, 0.5);
+  border-radius: 5px;
+  padding: 3px 10px 3px 10px;
+  max-width: fit-content;
 }
