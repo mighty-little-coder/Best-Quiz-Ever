@@ -134,7 +134,7 @@ function checkAnswer() {
 }
 
 function setTime() {
-  var timeLeft = 7;
+  var timeLeft = 45;
   var timerInterval = setInterval(() => {
     timeLeft--;
     timerEl.textContent = ("Time Remaining: " + timeLeft);
@@ -150,6 +150,11 @@ function setTime() {
 
   }, 1000);
 }
+
+// Incomplete code for writing score to localStorage
+// function quizOver() {
+//   document.querySelector.JSON.stringify
+// }
 
 function goToScores() {
   window.location.href = "http://127.0.0.1:5500/scorecard.html"

@@ -24,7 +24,7 @@ function renderAnswers() {
   scoreSheet.style.display = "none";
   if (renderCheckAns.style.display = "none") {
     renderCheckAns.style.display = "flex";
-  } else if (renderCheckAns.style.display = "flex") {
+  } else {
     renderCheckAns.style.display = "none";
   }
 }
