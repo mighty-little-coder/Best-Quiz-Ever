@@ -148,12 +148,20 @@
   box-shadow: 3px 3px 9px black;
 }
 
-.questionCount {
+.questionCount span {
   align-self: flex-start;
   justify-self: flex-start;
-  position: absolute;
+  /* position: absolute; */
   color: black;
-  margin: 10px 0px 0px 10px;
+  /* margin: 10px 0px 0px 10px; */
+}
+
+.questionCount span p {
+  align-self: flex-start;
+  justify-self: flex-start;
+  /* position: absolute; */
+  color: black;
+  /* margin: 10px 0px 0px 10px; */
 }
 
 #question {

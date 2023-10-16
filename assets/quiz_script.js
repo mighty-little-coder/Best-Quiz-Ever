@@ -99,6 +99,8 @@ var questions = [
     correctAnswer: "240fps"
   },
 ]
+// var lastQuestion = questionIndex[questionIndex.length + 10];
+let userScore = 0;
 
 document.querySelector(".startButton").addEventListener("click", setTime)
 document.querySelector(".startButton").addEventListener("click", quizStart)
@@ -110,6 +112,18 @@ function quizStart() {
   questionEl.style.display = "flex";
   answerEl.style.display = "flex";
   generateQuestion()
+}
+
+function quizOver() {
+  if (generateQuestion.questions = questionIndex.length - 1) {
+    clearTimeout(timerInterval)
+    timerEl.textContent = "FINISHED!"
+    questionEl.style.display = "none";
+    answerEl.style.display = "none";
+    scoreNav.style.display = "flex";
+  } else {
+    generateQuestion();
+  }
 }
 
 function generateQuestion() {
@@ -125,20 +139,11 @@ function generateQuestion() {
   })
 }
 
-function checkAnswer() {
-  var correctAnswer = questions[questionIndex].correctAnswer
-  var selectedAnswer = this.value
-  // 'this.value' is referring to the element used to call it's function, or in other terms, the elemnt this function is connected to. In this case, that would be the temp button. The value of 'value' means it is now referring to the value of the temp button (if btn 3 was click, it uses btn 3 as the input). 
-  questionIndex++;
-  generateQuestion();
-}
-
 function setTime() {
-  var timeLeft = 45;
+  var timeLeft = 15;
   var timerInterval = setInterval(() => {
     timeLeft--;
     timerEl.textContent = ("Time Remaining: " + timeLeft);
-
 
     if (!timeLeft) {
       clearTimeout(timerInterval)
@@ -148,12 +153,49 @@ function setTime() {
       scoreNav.style.display = "flex";
     }
 
+    if (questionIndex.length[15]) {
+      clearTimeout(timerInterval)
+      timerEl.textContent = "TIME IS UP!"
+      questionEl.style.display = "none";
+      answerEl.style.display = "none";
+      scoreNav.style.display = "flex";
+    }
   }, 1000);
 }
 
-// Incomplete code for writing score to localStorage
-// function quizOver() {
-//   document.querySelector.JSON.stringify
+function checkAnswer() {
+  var correctAnswer = questions[questionIndex].correctAnswer;
+  var selectedAnswer = this.value
+  // 'this.value' is referring to the element used to call it's function, or in other terms, the element this function is connected to. In this case, that would be the temp button. The value of 'value' means it is now referring to the value of the temp button (if btn 3 was click, it uses btn 3 as the input). 
+  if (selectedAnswer == correctAnswer) {
+    userScore += 1;
+    console.log("Correct Answer!")
+    console.log("Total Questions Answered Correctly: " + userScore)
+  } else {
+    console.log("Wrong Answer");
+  }
+  questionIndex++;
+  generateQuestion();
+}
+
+console.log(questionIndex)
+console.log(questions)
+
+// function wrongAns() {
+//   if (selectedAnswer != correctAnswer) {
+//     timeLeft=-3;
+//   }
+// }
+
+function saveScore() {
+  localStorage.setItem('userScore',JSON.stringify())
+}
+
+// function getScore() {
+//   var loggedScore = JSON.parse(localStorage.getItem("saveScore"));
+//   if (loggedScore! == null) {
+//     highSCore = loggedScore
+//   }
 // }
 
 function goToScores() {
